@@ -12,24 +12,18 @@ public class MainInsererProduit {
 
 
 	private static Scanner sc = new Scanner(System.in);
-	private static final String URL = "jdbc:mysql://localhost:3306/voiture?useSSL=false&serverTimezone=UTC";
-	private static final String LOGIN = "root";
-	private static final String PSW = "root";
-
+	
 	public static void main(String[] args) {
-
-		try {
-			Connection connexion = DriverManager.getConnection(URL, LOGIN, PSW);
-
+		
+		try(Connection connexion=Connexion.Connect();
+			Statement requete = connexion.createStatement();
+			PreparedStatement ps = connexion.prepareStatement("INSERT INTO produit(marque, modele, categorie, couleur, nombrePlace, annee, prix ,quantite) VALUES(?,?,?,?,?,?,?,?)");) 
+		{
 			System.out.println("Connection à la bdd ok");
-
-			// Utiliser la connextion pour utiliser des ordres SQL
-			Statement requete = connexion.createStatement();	
-
 
 			// Insérer voiture
 			Voiture voiture = addProduct();
-			PreparedStatement ps = connexion.prepareStatement("INSERT INTO produit(marque, modele, categorie, couleur, nombrePlace, annee, prix ,quantite) VALUES(?,?,?,?,?,?,?,?)");
+			
 			ps.setString(1, voiture.getMarque());
 			ps.setString(2, voiture.getModele());
 			ps.setString(3, voiture.getCategorie());

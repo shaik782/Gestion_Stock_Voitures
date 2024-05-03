@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class Importation {
 
-	private static final String CSV_FILE_PATH = "donnees_voiture.csv";
+	private static final String CSV_FILE_PATH = "Gestion_Inventaire_Produits/donnees_voiture.csv";
 
 	public static void main(String[] args) {
 		try {

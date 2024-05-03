@@ -1,6 +1,5 @@
 package src;
 import java.util.Scanner;
-
 public class Menu {
     
     public static void main(String[] args) {
@@ -39,17 +38,16 @@ public class Menu {
                     break;
                 case 6:
                     System.out.println("Afficher Voiture.");
-                    // Ajoutez le code de l'option 2 ici
                     break;
                 case 7:
                     System.out.println("Au revoir !");
-                    // Ajoutez le code de l'option 3 ici
+
                     break;
                 default:
                     System.out.println("Choix invalide. Veuillez réessayer.");
                     break;
             }
-        } while (choice != 8);
+        } while (choice != 7);
 
         scanner.close();
     }
