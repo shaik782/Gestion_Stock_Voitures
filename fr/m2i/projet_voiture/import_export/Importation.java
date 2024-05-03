@@ -24,14 +24,6 @@ public class Importation {
 			System.err.println("Erreur lors de la lecture du fichier CSV.");
 			e.printStackTrace();
 		}
-		Connection connexion = Connexion.Connect();
-		try {
-			SuppressionProduit.supprimerUnProduit(connexion, "Toyota", "Corolla","Noir", 2023, 1);
-		} catch (SQLException e) {
-			System.err.println("Erreur lors de la suppression");
-
-			e.printStackTrace();
-		}
 	}
 
 	public static void parseCSVData() throws IOException {
