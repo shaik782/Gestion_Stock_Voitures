@@ -1,10 +1,17 @@
-package src;
+package fr.m2i.projet_voiture.import_export;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+
+import fr.m2i.projet_voiture_scrud.AjoutProduit;
+import fr.m2i.projet_voiture_scrud.CheckProduit;
+import fr.m2i.projet_voiture_scrud.InsererProduitConsole;
+import fr.m2i.projet_voiture_scrud.SuppressionProduit;
+import fr.m2i.projet_voiture_scrud.UpdateProduit;
+import src.Connexion;
 
 public class Importation {
 
@@ -15,6 +22,14 @@ public class Importation {
 			parseCSVData();
 		} catch (IOException e) {
 			System.err.println("Erreur lors de la lecture du fichier CSV.");
+			e.printStackTrace();
+		}
+		Connection connexion = Connexion.Connect();
+		try {
+			SuppressionProduit.supprimerUnProduit(connexion, "Toyota", "Corolla","Noir", 2023, 1);
+		} catch (SQLException e) {
+			System.err.println("Erreur lors de la suppression");
+
 			e.printStackTrace();
 		}
 	}

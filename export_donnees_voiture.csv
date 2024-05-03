@@ -1,0 +1,30 @@
+numSerie,marque,modele,categorie,couleur,nombrePlace,annee,prix,quantite
+1,Renault,Scenic,Monospace,Blanc,5,2016,10500.0,4
+2,Renault,Clio,Citadine,Noir,5,2019,15000.0,10
+3,Volkswagen,Golf,Citadine,Gris,5,2023,27000.0,6
+4,Volkswagen,Touran,Monospace,Bleu,7,2018,17300.0,2
+5,Volvo,V40,Citadine,Noir,5,2020,18000.0,36
+6,Volvo,V60,Citadine,Blanc,5,2018,15200.0,54
+7,Volvo,S60,Berline,Rouge,5,2017,19990.0,18
+8,Volvo,S90,Berline,Noir,5,2021,27000.0,9
+9,Peugeot,308,Citadine,Gris,5,2020,14000.0,90
+10,Peugeot,208,Citadine,Rouge,5,2023,25000.0,108
+11,Peugeot,3008,SUV,Noir,5,2024,40000.0,72
+12,Peugeot,5008,Monospace,Gris,7,2020,29900.0,90
+13,Renault,Captur,SUV,Bleu,5,2020,22500.0,36
+14,Renault,Clio,Citadine,Blanc,5,2019,17200.0,117
+15,Renault,Kadjar,SUV,Rouge,5,2022,22000.0,18
+16,Renault,Espace,Monospace,Noir,7,2023,35000.0,45
+17,Volkswagen,Polo,Citadine,Orange,5,2020,10500.0,108
+18,Volkswagen,Tiguan,SUV,Marron,5,2014,8400.0,27
+19,Volkswagen,Golf,Citadine,Noir,5,2018,13600.0,63
+20,Volswagen,Passat,Berline,Gris,5,2024,48000.0,45
+21,Seat,Ibiza,Berline,Rouge,5,2015,10000.0,36
+22,Mercedes,Classe B,Citadine,Marron,5,2019,13500.0,54
+23,Mercedes,Classe V,Van,Noir,9,2020,60000.0,18
+24,Mercerdes,Classe C,Berline,Blanc,5,2022,48600.0,36
+25,BMW,Serie 1,Citadine,Blanc,5,2016,17200.0,63
+26,BMW,Serie 3,Break,Gris,5,2019,25000.0,36
+27,BMW,M5,Berline,Noir,5,2020,85000.0,9
+28,Peugeot,508,Break,rouge,5,2015,16000.0,4
+29,Toyota,Corolla,Break,Noir,5,2023,24000.0,3

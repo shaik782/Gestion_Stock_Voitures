@@ -21,7 +21,9 @@ public class Voiture {
 	public String getMarque() {
 		return marque;
 	}
-	public void setMarque(String marque) {
+	public void setMarque(String marque) {//throws Exception{
+		//if (marque.trim().length() == 0) { throw new Exception("La marque est vide");
+		//}
 		this.marque = marque;
 	}
 	public String getModele() {

@@ -1,8 +1,11 @@
-package src;
+package fr.m2i.projet_voiture_scrud;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
+
+import src.Connexion;
+import src.Voiture;
 
 public class InsererProduitConsole {
 

@@ -1,4 +1,4 @@
-package src;
+package fr.m2i.projet_voiture_scrud;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
